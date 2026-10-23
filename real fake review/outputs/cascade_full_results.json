@@ -1,0 +1,68 @@
+{
+  "svm_baseline": {
+    "name": "Pure SVM (Tier 1 only)",
+    "accuracy": 0.9389338174616273,
+    "f1": 0.9385177799933533,
+    "precision": 0.9441658308258107,
+    "recall": 0.9329369012223323
+  },
+  "deberta_baseline": {
+    "name": "Pure DeBERTa (Tier 2 only)",
+    "accuracy": 0.9689717775210431,
+    "f1": 0.9696676347208777,
+    "precision": 0.9476505834121728,
+    "recall": 0.9927320779649819
+  },
+  "cascade_results": [
+    {
+      "name": "Cascade @ threshold=0.8",
+      "accuracy": 0.9648456841062881,
+      "f1": 0.9649267248476865,
+      "precision": 0.9619172685489166,
+      "recall": 0.9679550710274198,
+      "threshold": 0.8,
+      "escalation_rate": 0.10579303515431589,
+      "n_escalated": 641,
+      "n_total": 6059,
+      "estimated_latency_ms": 3.9025803302451565
+    },
+    {
+      "name": "Cascade @ threshold=0.85",
+      "accuracy": 0.9679815151015019,
+      "f1": 0.9681130834976989,
+      "precision": 0.9633627739614,
+      "recall": 0.9729104724149322,
+      "threshold": 0.85,
+      "escalation_rate": 0.14012213236507676,
+      "n_escalated": 849,
+      "n_total": 6059,
+      "estimated_latency_ms": 4.475389398408155
+    },
+    {
+      "name": "Cascade @ threshold=0.9",
+      "accuracy": 0.9693018649942234,
+      "f1": 0.9695281782437746,
+      "precision": 0.9616509587260319,
+      "recall": 0.9775355137099438,
+      "threshold": 0.9,
+      "escalation_rate": 0.18121802277603566,
+      "n_escalated": 1098,
+      "n_total": 6059,
+      "estimated_latency_ms": 5.161107946353283
+    },
+    {
+      "name": "Cascade @ threshold=0.95",
+      "accuracy": 0.9712823898333058,
+      "f1": 0.9716704656463693,
+      "precision": 0.9579454253611557,
+      "recall": 0.9857945160224645,
+      "threshold": 0.95,
+      "escalation_rate": 0.25994388512955935,
+      "n_escalated": 1575,
+      "n_total": 6059,
+      "estimated_latency_ms": 6.474713357477082
+    }
+  ],
+  "svm_latency_ms": 2.13733699999284,
+  "deberta_latency_ms": 16.685817999998108
+}

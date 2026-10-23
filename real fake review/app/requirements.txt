@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+scikit-learn
+joblib
+transformers
+torch
+playwright
+python-multipart
